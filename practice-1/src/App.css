@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.style-react{
+  background-color: aqua;
+}
+
+.style-myData{
+  background-color: purple;
+}
+.style-teacherData{
+  background-color: rgb(20, 165, 209);
+}
