@@ -1,24 +1,26 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 0.5vmin);
+  color: white;
+  min-width: 100vw;
 }
 
-@keyframes logo-spin {
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -27,27 +29,113 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+#box{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#box1{
+  width: 200px;
+  height: 200px;
+  color: black;
+  text-align: center;
+  border: 5px solid white;
+  background-color: #61dafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#box2{
+  width: 200px;
+  height: 200px;
+  color: black;
+  text-align: center;
+  border: 5px solid white;
+  background-color: #8de0cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#box3{
+  width: 200px;
+  height: 200px;
+  color: black;
+  text-align: center;
+  border: 5px solid white;
+  background-color: #d5a2e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-hr {
+  height: 20px;
+  width: 60%;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+/* Media queries para hacer el contenedor responsivo */
+@media (min-width: 260px) {
+  .container {
+    max-width: 240px;
   }
 }
 
-.card {
-  padding: 2em;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
 
-.style-react{
-  background-color: aqua;
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
-.style-myData{
-  background-color: purple;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
-.style-teacherData{
-  background-color: rgb(20, 165, 209);
+
+
+
+.mt-2 {
+  margin-top: 0.5rem; 
+}
+
+.mt-4 {
+  margin-top: 1.5rem; 
+}
+
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
