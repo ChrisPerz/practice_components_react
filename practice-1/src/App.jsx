@@ -4,17 +4,22 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { MyFirstComponent } from './components/MyFirstComponent'
 import { SecondComponent } from './components/SecondComponent'
+import { FourthComponent } from './components/FourthComponent'
+import { Child } from './components/child'
 function App() {
-  const [count, setCount] = useState(0)
 
+  const [name, setName] = useState("Christian Pérez Castillo");
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>Fundamentos de React</h1>
-        <hr className='white-hr' />
-        <MyFirstComponent />
-        <hr className='white-hr' />
-        <SecondComponent />
+    <div className="App">
+      <header className="App-header">
+        <hr className='white-hr'/>
+        <FourthComponent/>
+        <hr className='white-hr'/>
+        <Child
+          name={name}
+          setName={setName}
+        />
+        <hr className='white-hr'/>
       </header>
     </div>
   )
